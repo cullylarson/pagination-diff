@@ -1,6 +1,6 @@
 {
   "name": "pagination-diff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Finds the difference between two pagination sources.",
   "scripts": {
     "test": "jest ./test",
