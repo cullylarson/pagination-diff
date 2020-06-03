@@ -2,6 +2,8 @@
   "name": "pagination-diff",
   "version": "0.1.1",
   "description": "Finds the difference between two pagination sources.",
+  "main": "cjs/",
+  "module": "esm/",
   "scripts": {
     "test": "jest ./test",
     "clean": "rm -rf cjs",
