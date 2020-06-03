@@ -53,7 +53,11 @@ const compare = (apiItem, repoItem) => {
     else return 1
 }
 
-const paginationDiff = PaginationDiff(getNextPageFromApi(apiUrl, api), getNextPageFromRepo(repo), compare)
+const paginationDiff = PaginationDiff(
+    {getNextPage: getNextPageFromApi(apiUrl, api), bufferSize: 1000},
+    {getNextPage: getNextPageFromRepo(repo), bufferSize: 1000},
+    compare,
+)
 
 (async () => {
     const resultCollected = {
